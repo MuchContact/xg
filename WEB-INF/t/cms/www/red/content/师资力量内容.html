@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${title} - ${site.name} - Powered by JEECMS</title>
+<meta content="${content.tagStr!}" http-equiv="keywords" />
+<meta content="${content.description!}" http-equiv="description" />
+
+<!--[if lt IE 9]>
+<script src="${resSys}/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="/${res}/css/html5.css" rel="stylesheet" type="text/css"/>
+
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script src="/${res}/js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+Cms.attachment("${base}","${content.id}","${content.attachments?size}","attach");
+Cms.viewCount("${base}","${content.id}");
+Cms.siteFlow("${base}", location.href, document.referrer);
+});
+</script>
+
+<!--导入需要的样式-->
+<link rel="stylesheet" href="../${res}/style/nav_teacherPower/teacherInfoFrame.css" type="text/css"/>
+
+</head>
+<body>
+<!-- 标题 -->
+  	<span class="title">
+  	教师简介
+  	</span>
+  	<br>
+  	
+  	<!-- 教师信息表单 -->
+  	
+  	<table class="teacherTable" border="0" cellpadding="0" width="800px">
+		<tr style="border:1px solid gray;"><td class="teacherRank">姓名</td><td style="background-color:white; ">
+		<span class="teacherName">${content.attr.xm}</span>
+		
+		</td>
+
+		<td rowspan="4" width="500px">${content.txt}</td>
+
+		</tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">性别</td><td style="background-color:#EEECE1;">
+		<span class="teacherName">${content.attr.xb}</span>
+		
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">电话</td><td style="background-color:white;">
+		<span class="teacherName">${content.attr.lxfs}</span>
+		
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">Email</td><td style="background-color:#EEECE1;">
+		<span class="teacherName">${content.attr.Email}</span>
+		
+		
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">主讲课程</td><td colspan="2" style="background-color:white;">
+		<span style="margin-top:10px; display:block; margin:10px;">
+		${content.attr.zjkc}
+		</span>
+		
+		
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">研究方向</td><td colspan="2" style="background-color:#EEECE1;">
+		<span style="margin-top:10px; display:block; margin:10px;">
+		${content.attr.yjfx}
+		</span>
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">个人简介</td><td colspan="2" style="background-color:white;">
+		<span style="margin-top:10px; display:block; margin:10px;">
+		${content.attr.grjs}
+		</span>
+		</td></tr>
+		<tr style="border:1px solid gray;"><td class="teacherRank">科研及获奖</td><td colspan="2" style="background-color:#EEECE1;">
+		<span style="margin-top:10px; display:block; margin:10px;">
+		${content.attr.kyjhj}
+		</span>
+		</td></tr>
+                <tr style="border:1px solid gray;"><td class="teacherRank">论文链接</td><td colspan="2" style="background-color:White;">
+		<span style="margin-top:10px; display:block; margin:10px;">
+	       <!--附件_Begin-->
+             <div style="margin:auto; width:98%;">
+                <ul>
+                    [#list content.attachments as attach]
+                    <li style="line-height:24px; background:url(../../${res}/img/news/red-icon.gif) 1px 10px no-repeat; text-indent:10px;">
+                        <a id="attach${attach_index}">${attach.name}</a>
+                    </li>
+                    [/#list]
+                </ul>
+            </div>
+            <!--附件_End-->
+		</span>
+		</td></tr>
+		
+	</table>
+  	<br>
+  	<br>
+
+
+
+
+
+</body>
+</html>

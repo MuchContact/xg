@@ -1,0 +1,21 @@
+<div id="search" class="page box" style="float:right; margin-top:5px;">
+      <div class="searchform fl">
+      <form action="${base}/search.jspx" target="_blank">
+        <input name="q" value="${q!'请输入关键词'}" type="text" id="txtKey" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="24" autocomplete="off" />
+		<span id="fid_box">
+		<select name="channelId" id="fid">
+		  <option value="">所有信息</option>
+		  [@cms_channel_list]
+		  [#list tag_list as c]
+                  [#if c_index>5]
+		  <option value="${c.id}">${c.name}</option>
+                  [/#if]
+		  [/#list]
+                  <option value="">留言板</option>
+	      [/@cms_channel_list]
+		</select>
+		</span>
+        <input type="submit" id="btnSearch" value="search"/>
+      </form>
+	  </div>	 
+</div>
