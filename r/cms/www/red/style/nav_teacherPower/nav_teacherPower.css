@@ -1,0 +1,62 @@
+/*
+��ʦ�ſ�
+*/
+.conten{
+	height:650px;
+	width:970px;
+	margin:10px auto;
+	background-color:#F9F9F9;
+	box-shadow:0 0 5px gray;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 22px;
+	text-align:center;
+	display:block;
+}
+
+/*
+��ʦ�?
+*/
+.teacherTable{
+	margin-left: 85px;
+	float:left;
+}
+
+/*
+��ʦ��ְ��td
+*/
+
+.teacherRank{
+	height: 50px;
+	width: 130px;
+	background-color: #4BACC6;
+	COLOR: white;
+	FONT-SIZE: 12pt;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+.teacherName a:LINK{
+	font-size: 12pt;
+        margin-bottom:10px;
+
+	}
+
+/*
+ÿ����ʦ������
+*/
+.teacherName{
+	height:50px;
+	width:110px;
+	LINE-HEIGHT: 50px;
+	COLOR: black;
+	display:block;
+	text-align:center;
+	background-color: pink;
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+	}

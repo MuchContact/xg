@@ -1,0 +1,29 @@
+body{
+width:1000px;
+
+margin:0px auto;
+box-shadow: 0px 8px 20px gray;
+background-color: #F9F9F9;
+
+}
+
+/*
+设置页面链接属性
+*/
+a:link{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:#9D0B0B;
+	text-decoration: underline;
+}
+a:visited{
+	color:black;
+	}
+/*
+空白
+*/
+.blank{
+	height:20px;
+	}

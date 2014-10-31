@@ -1,0 +1,76 @@
+/*
+教师个人信息页面
+*/
+body{
+	background-color: #F9F9F9;
+	margin:0px auto;
+	width:1000px;
+	height:auto;
+	
+	
+}
+
+/*
+标题
+*/
+.title{
+	text-align: 30px;
+	height:30px;
+	display:block;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+
+/*
+教师表单
+*/
+.teacherTable{
+	margin-left: 85px;
+	float:left;
+}
+
+/*
+教师的职称td
+*/
+
+.teacherRank{
+	height: 50px;
+	width: 130px;
+	background-color: #4BACC6;
+	FONT-FAMILY: 宋体;
+	COLOR: white;
+	FONT-SIZE: 12pt;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+.teacherName a:LINK{
+	font-size: 12pt;
+	}
+
+/*
+每个教师的名字
+*/
+.teacherName{
+	height:50px;
+	width:120px;
+	LINE-HEIGHT: 50px;
+	FONT-FAMILY: 宋体;
+	COLOR: black;
+	display:block;
+	text-align:center;
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+	}
+
+.name{
+	width:120px;
+	height:50px;
+	background-color:yellow;
+	}
+

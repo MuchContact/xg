@@ -1,0 +1,259 @@
+body{
+	width:100%;
+	height:100%;
+	margin:0px auto;
+	font-size:12px;
+	background-color:#F9F9F9;	
+}
+
+
+/*
+设置页面链接属性
+*/
+a:link{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:#9D0B0B;
+	text-decoration: underline;
+}
+a:visited{
+	color:black;
+	}
+
+
+/*
+top:上部
+*/
+
+/*
+最上面的链接
+*/
+.login{
+	height:18px;
+	margin-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	}	
+.login span{
+	color:red;
+	}
+.login a{
+	font-size: 12px;
+	}
+
+/*
+Middle：中部
+*/
+
+.middle{
+	height:600px;
+	width:100%;
+	background:url("../images/login/131011_window3_bg.jpg");
+}
+
+.innerMiddle{
+	width:1000px;
+	height:600px;
+	display:block;
+	margin:0 auto;
+	background:url("../images/login/131011_window3_cnt.jpg");
+	}
+/*
+登录框
+*/
+.loginBox{
+	width:296px;
+	height:465px;
+	float:right;
+	margin-right:100px;
+	margin-top:70px;
+	box-shadow:0 0 20px gray;
+	border:1px solid gray;
+	background-color:white;
+	filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.8; /*Firefox私有，透明度50%*/
+	opacity:0.8;
+	border-radius:10px;/*设置边框圆角*/
+	}
+
+/*
+标题栏
+*/
+.loginTitle{
+	width:100%;
+	height:47px;
+	background-color:pink;
+	border-radius:10px 10px 0px 0px;/*设置边框圆角*/
+	}
+.loginTitle span{
+	display:block;
+	float:left;
+	height:47px;
+	font-size:14px;
+	line-height: 47px;
+	font-family: verdana;
+	text-align: center;
+	font-weight: bold;
+	color:#8B8A8F;
+	}
+	
+.span1{
+	background-color:white;
+	width:148px;
+	border-radius:10px 0 0 0 ;
+	}
+.span2{
+	background-color:#F1F9F0;
+	width:148px;
+	border-radius:0 10px 0 0 ;
+	box-shadow:0 0 10px gray;
+	}
+
+/*
+用户名框
+*/
+.userName,.passWord{
+	position:relative;
+	width: 240px;
+	height: 42px;
+	line-height: 42px;
+	margin: 30px 0 18px 25px;
+	padding-right: 5px;
+	clear: both;
+	border-radius: 4px;
+	z-index: 2;
+	display:block;
+	background:url(../images/login/bg.png);
+	background-position: 0 -352px;
+	text-align:left;
+	}
+/*
+人头
+*/
+.userName b{
+	position: absolute;
+	left: 9px;
+	top: 13px;
+	z-index: 1;
+	width: 14px;
+	height: 16px;
+	line-height: 42px;
+	background:url(../images/login/bg.png);
+	background-position: -169px -64px;
+	}
+
+/*
+输入框
+*/
+.inputUserName,.inputPassWord{
+	position:absolute;
+	width: 205px;
+	height: 21px;
+	top: 10px;
+	left: 28px;
+	font-size: 14px;
+	font-weight:normal;
+	font-family: verdana;
+	line-height: 21px;
+	color: #92a4bf;
+	font-weight: normal;
+	}
+	
+/*
+密码图标
+*/
+.passWord b{
+	position: absolute;
+	left: 9px;
+	top: 13px;
+	z-index: 2;
+	width: 14px;
+	height: 16px;
+	line-height: 42px;
+	background:url(../images/login/bg.png);
+	background-position: -193px -64px;
+	}
+
+
+/*
+单选按钮，选择用户角色
+*/
+
+.userRole{
+	width:245px;
+	height:40px;
+	margin:10px auto;
+	
+	color: #92a4bf;
+	}
+.userRole span{
+	display:block;
+	line-height:40px;
+	}
+	
+	
+/*
+登陆按钮
+*/
+.loginButton,.registerButton{
+	width: 110px;
+	height: 38px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 38px;
+	outline: 0;
+	background-color: transparent;
+	border-radius: 3px;
+	background:url(../images/login/bg.png);
+	background-position: 0 -208px;	
+	color: white;
+	box-shadow: 0 2px 5px rgba(0,94,21,.3);
+	margin-top:30px;
+	margin-left:28px;
+	}
+
+.registerButton{
+	background-position: -117px -208px;
+	color:#5C7A5C;
+	}
+/*
+默认情况下：注册框是隐藏的。
+*/
+.registerForm{
+	display:none;
+	}
+
+/*
+bottom:底部
+*/
+/*
+版本信息部分
+*/
+.copyRight{
+	height:65px;
+	width:1200px;
+	margin:0 auto;
+	margin-top:10px;
+	padding-top:10px;
+	border-top:2px solid #C0C0C0;
+	}
+
+.copyRight span{
+	font-family: "Microsoft YaHei","Comic Sans MS",Arial,Tahoma,Sans-Serif;
+	display:block;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	}
+.copyRight span a{
+ font-size: 12px;
+}

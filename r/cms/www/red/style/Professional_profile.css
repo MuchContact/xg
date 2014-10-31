@@ -1,0 +1,117 @@
+
+/*
+专业概况：主体部分
+*/
+.content{
+	height:650px;
+	width:970px;
+	margin:10px auto;
+	background-color:#F9F9F9;
+	box-shadow:0 0 5px gray;
+}
+
+/*
+左侧
+*/
+.contentLeft{
+	height:650px;
+	width:210px;
+	background-color:#CDDCE8;
+	float:left;
+}
+/*
+标题
+*/
+.leftTitle{
+	display:block;
+	background-color:#2281A0;
+	height:30px;
+	width:200px;
+	line-height:30px;
+	color:black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	padding-left:10px;
+	box-shadow:0 0 5px gray;
+}
+
+/*
+左侧菜单
+*/
+
+#nav_container3 { 
+	width:210px; 
+	margin:0px; 
+	margin-top:20px; 
+	float:left; 
+	
+	}
+#nav_container3 ul{
+	padding:0px;
+	margin-top:0px;
+	}
+
+#nav_container3 li {
+	 padding:0px; 
+	 margin-bottom:4px; 
+	 }
+#nav_container3 a:link, #nav_container3 a:visited, #nav_container3 a:active { 
+	width:160px; 
+	background: url(../images/bg4.gif) -200px 0px repeat-x; 
+	font-weight:bold; 
+	height:26px; 
+	padding-top:10px; 
+	padding-left:50px; 
+	display:block; 
+	text-align:left; 
+	border-bottom:1px solid #777; 
+	text-decoration:none; color:#333; 
+	}
+#nav_container3 a:hover { 
+	color:#000; 
+	background: url(../images/bg4.gif) -24px 0px repeat-x; 
+	}
+
+
+/*
+右侧部分
+*/
+.contentRight{
+	height:650px;
+	width:630px;
+	float:left;
+	margin-left:30px;
+	}
+.contentRight ul{
+	padding:0px;
+	}
+.contentRight li{
+	display:block;
+	margin-top:40px;
+	}
+
+.liTable tr{
+	display:block;
+	background-color:#CDDCE8;
+	height:25px; 
+	margin-top:1px;
+	}
+.liTable td{
+	width:"630px";
+	height:17px;
+	line-height:17px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color:#014492;
+	}
+	
+.liTable .s1{
+	margin-left:10px;
+	float:left;
+	}
+	
+.liTable .s2{
+	float:right;
+	margin-right:10px;
+	}
+	
