@@ -44,7 +44,7 @@ box-shadow:0 0 10px gray;
 	margin-left: 15px;
 }
 #menu_out{
-	width:966px;
+	width:980px;
 	padding-left:4px;
 	margin-left:auto;
 	margin-right:auto;
@@ -153,7 +153,7 @@ box-shadow:0 0 10px gray;
 .slideNews{
 	margin:8px auto;
 	height:350px;
-	width:970px;
+	width:980px;
 	border:1px solid #C0C0C0;
 }
 /*
@@ -202,7 +202,7 @@ box-shadow:0 0 10px gray;
 研究生和本科生动态部分
 */
 .development{
-	width:970px;
+	width:980px;
 	height:350px;
 	margin:8px auto;
 	border:1px solid #C0C0C0;
