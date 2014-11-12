@@ -46,7 +46,7 @@ $(function() {
     [#include "../include/页头导航栏.html"/]
 	
 
-         <!--左边栏begin-->
+    <!--左边栏begin-->
 	<div class="contentLeft">
 		<span class="leftTitle">招生就业</span>
 		
@@ -67,14 +67,12 @@ $(function() {
 			roller.init('nav_container3','h',-200,-24,100,20);
 		</script>		
 	</div>
-
-
-         <!--左边栏end-->
+	<!--左边栏end-->
 
 
 
 
-        <!-- 右栏_begin -->
+    <!-- 右栏_begin -->
 	<div class="w670 mt10" style="margin-left:40px;">
         <div class="website">当前位置：<a href="${base}/">首页</a> > [#list channel.nodeList as n]<a href="${n.url}" target="_blank">${n.name}</a>[#if n_has_next] > [/#if][/#list]</div>
         <div class="clear"></div>
