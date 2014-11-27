@@ -29,13 +29,13 @@ $(function() {
 <link href="/${res}/style/common.css" rel="stylesheet" type="text/css"/>
 <link href="/${res}/style/nav_teacherPower/nav_teacherPower.css" rel="stylesheet" type="text/css"/>
 <!--左侧导航栏需要的样式和js-->
-<script src="/${res}/javascript/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/${res}/javascript/slides.min.jquery.js"></script>
-<script type="text/javascript" src="/${res}/javascript/main.js"></script>
-
 <script type="text/javascript" src="/${res}/javascript/Professional_profile.js"></script>
 <link rel="stylesheet" href="/${res}/style/Professional_profile.css" type="text/css"/>
 <link rel="stylesheet" href="/${res}/style/professional_profile/zhuanRight.css" type="text/css"/>
+
+<script src="/${res}/javascript/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/javascript/slides.min.jquery.js"></script>
+<script type="text/javascript" src="/${res}/javascript/main.js"></script>
 
 </head>
 
@@ -46,17 +46,18 @@ $(function() {
     [#include "../include/页头导航栏.html"/]
 	
 
-         <!--左边栏begin-->
+    <!--左边栏begin-->
 	<div class="contentLeft">
-		<span class="leftTitle">招生就业</span>
+		<span class="leftTitle">科学研究</span>
 		
 		<div id="nav_container3">
 	  		<ul>
-		    <li> <a href="${base}/xjs/index.jhtml">系介绍</a></li>
-		    <li> <a href="${base}/xrld/index.jhtml">现任领导</a></li>
-		    <li> <a href="${base}/zzjg/index.jhtml">组织机构</a></li>
-		    <li> <a href="${base}/bgzn/index.jhtml">办公指南</a></li>
-		    
+		    <li> <a href="${base}/yjfx/index.jhtml">研究方向</a></li>
+		    <li> <a href="${base}/kyxm/index.jhtml">科研项目</a></li>
+		    <li> <a href="${base}/kycg/index.jhtml">科研成果</a></li>
+		    <li> <a href="${base}/kyhj/index.jhtml">科研获奖</a></li>
+		    <li> <a href="${base}/xslw/index.jhtml">学术论文</a></li>
+                    <li> <a href="${base}/xsjl/index.jhtml">学术交流</a></li>
 		  	</ul>
 		</div>
 			<br/>
@@ -67,31 +68,39 @@ $(function() {
 			roller.init('nav_container3','h',-200,-24,100,20);
 		</script>		
 	</div>
-
-
-         <!--左边栏end-->
+	<!--左边栏end-->
 
 
 
 
-        <!-- 右栏_begin -->
-	<div class="contentRight">
-
-        <div class="w670 mt10" style="margin-left:20px;">
+    <!-- 右栏_begin -->
+	<div class="w670 mt10" style="margin-left:40px;">
         <div class="website">当前位置：<a href="${base}/">首页</a> > [#list channel.nodeList as n]<a href="${n.url}" target="_blank">${n.name}</a>[#if n_has_next] > [/#if][/#list]</div>
         <div class="clear"></div>
-			
-		<!-- 下面是主要内容 -->
-		<div class="zhuanRight">
-				
-			地理信息系统（Geographic Information System或 Geo－Information system，GIS）有时又称为“地学信息系统”。它是一种特定的十分重要的空间信息系统。它是在计算机硬、软件系统支持下，对整个或部分地球表层（包括大气层）空间中的有关地理分布数据进行采集、储存、管理、运算、分析、显示和描述的技术系统。
-
-		</div>
-			
-	</div>
-	
-</div>
-   
+        [@cms_content_page count='6' orderBy='4' channelId=channel.id channelOption='1' dateFormat='yyyy-MM-dd']
+        [#list tag_pagination.list as a]
+        <div class="hdNews hasPic">
+            
+            [#if a.typeImg??]
+            <a href="${a.url}" target="_blank" class="pic" style="border:1px solid #ccc;">
+            <img src="${a.typeImg!site.typeImg}" />
+            </a>
+            [/#if]
+            <a href="${a.url}" title="${a.title}" target="_blank">
+            <h2>[@text_cut s=a.title len=22 /]</h2>
+            </a>
+            <p>
+            [@text_cut s=a.desc len=60 append='...'/]
+            <span style="color:#999">(${a.date?string(dateFormat)})</span>
+            </p>
+        
+        </div>
+        [/#list]
+        <div style="clear:both;"></div>
+        <div class="pagesite">[@cms_pagination sysPage='1'/]</div>
+        [/@cms_content_page]
+        
+    </div>
     <!-- 右栏_end -->
    
     [#include "../include/页脚友情链接栏.html"/]
