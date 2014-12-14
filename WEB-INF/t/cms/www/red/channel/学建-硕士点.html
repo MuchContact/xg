@@ -45,9 +45,9 @@ $(function() {
     [#include "../include/标志和搜索.html"/]
     [#include "../include/页头导航栏.html"/]
 	
-
+   <div style="position: relative;overflow: auto;">
          <!--左边栏begin-->
-	<div class="contentLeft">
+	<div class="contentLeft" style="position: absolute; bottom: 0px; top: 0px; height:auto">
 		<span class="leftTitle">学科建设</span>
 		
 		<div id="nav_container3">
@@ -80,7 +80,7 @@ $(function() {
 
 
         <!-- 右栏_begin -->
-	<div class="contentRight">
+	<div class="contentRight" style="height:auto; margin-left:220px">
 
         <div class="w670 mt10" style="margin-left:20px;">
 
@@ -733,7 +733,7 @@ $(function() {
 	</div>
    
     <!-- 右栏_end -->
-   
+    </div>
     [#include "../include/页脚友情链接栏.html"/]
     [#include "../include/页脚信息栏.html"/]
 </div>
