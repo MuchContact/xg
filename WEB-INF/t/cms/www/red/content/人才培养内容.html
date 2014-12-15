@@ -36,7 +36,7 @@ Cms.siteFlow("${base}", location.href, document.referrer);
     [#include "../include/标志和搜索.html"/]
     [#include "../include/页头导航栏.html"/]
 	<!-- 左栏_begin -->
-	<div class="w670 mt10">
+	<div class="mt10" style="margin: 0 auto; width: auto;">
         <div class="website">当前位置：<a href="${base}/">首页</a> > [#list channel.nodeList as n]<a target="_blank" href="${n.url}">${n.name}</a>[#if n_has_next] > [/#if][/#list] > 正文</div>
         <div class="clear"></div>
         
@@ -98,20 +98,10 @@ Cms.siteFlow("${base}", location.href, document.referrer);
             </div>
         </div>
         <div class="clear-10"></div>
-        <div class="hundred100">
-            <div class="rim06">
-                <!--网友评论_Begin-->
-                [#if channel.commentControl!=2]
-                [#include "inc_comment_input.html"/]
-                [#include "inc_comment_list.html"/]
-                [/#if]
-                <!--网友评论_End-->
-            </div>
-        </div>
         
     </div>
     <!-- 左栏_end -->
-    [#include "../include/共用右栏3.html"/]
+    
     [#include "../include/页脚友情链接栏.html"/]
     [#include "../include/页脚信息栏.html"/]
 </div>  
