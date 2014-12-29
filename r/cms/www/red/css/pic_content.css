@@ -143,6 +143,7 @@ h3 {
   z-index: 1;
   height: auto;
   border: 0;
+  width: 900px;
   }
 
 .callbacks .caption {

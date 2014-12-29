@@ -32,6 +32,12 @@ $(function() {
 <link href="../${res}/style/common.css" rel="stylesheet" type="text/css"/>
 <link href="../${res}/style/slide.css" rel="stylesheet" type="text/css"/>
 
+<style type="text/css">
+	.paragraphIndent{
+		text-indent: 25px;
+		font-size: 17px;
+	}
+</style>
 </head>
 
 <body>
@@ -43,52 +49,58 @@ $(function() {
     [#include "../include/页头导航栏.html"/]
 
 <!-- 幻灯片和新闻动态部分 -->
-<div class="slideNews">
-<div id="container" style="margin-top:10px;">
+<div class="slideNews" style="height: 360px;">
+<div id="container" style="float:left; margin-top:12px; height: 290px;">
 		<div id="example">
 			
 			<div id="slides">
 				<div class="slides_container">
 					<div>
-						<a href="#" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<a href="#" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide01.jpg" width="570" height="270" alt="Slide 1"></a>
 						<div class="caption" style="bottom:0">
-							<p>Happy Bokeh Thursday!</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<a href="#" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide02.jpg" width="570" height="270" alt="Slide 2"></a>
 						<div class="caption">
-							<p>Taxi</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<a href="#" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide03.jpg" width="570" height="270" alt="Slide 3"></a>
 						<div class="caption">
-							<p>Happy Bokeh raining Day</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+						<a href="#" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide04.jpg" width="570" height="270" alt="Slide 4"></a>
 						<div class="caption">
-							<p>We Eat Light</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+						<a href="#" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide05.jpg" width="570" height="270" alt="Slide 5"></a>
 						<div class="caption">
-							<p>&ldquo;I must go down to the sea again, to the lonely sea and the sky...&rdquo;</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+						<a href="#" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide06.jpg" width="570" height="270" alt="Slide 6"></a>
 						<div class="caption">
-							<p>mobanwang.com</p>
+							<p></p>
 						</div>
 					</div>
 					<div>
-						<a href="#" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+						<a href="#" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide07.jpg" width="570" height="270" alt="Slide 7"></a>
 						<div class="caption">
-							<p>Save my love for loneliness</p>
+							<p></p>
+						</div>
+					</div>
+					<div>
+						<a href="#" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../${res}/images2/slide08.jpg" width="570" height="270" alt="Slide 7"></a>
+						<div class="caption">
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -101,86 +113,16 @@ $(function() {
 
              
                     <!-- 新闻头条_begin -->
-                    <div class="w308 rim02 mt10" style="float:right; margin-top:20px; margin-right:6px;">
-                        <div class="LanMu02b">
-                            <div class="LanMu02a">新闻头条</div>
-                            <a href="${base}/xwtt/index.jhtml" class="more" style="margin-top:5px;">more>></a>
-                        </div>
-                        <div class="paihangbang">
-                            <ul>
-                                [@cms_content_list count='10' titLen='17' orderBy='7' channelOption='1' channelId='78']
-                                [#list tag_list as a]
-                                <li>
-                                <div class="v-rank1-order1 v-rank1-top1">${a_index+1}</div>
-                                <a href="${a.url}" title="${a.title}" target="_blank">
-                                [@text_cut s=a.title len=titLen /]
-                                </a>
-                                </li>
-                                [/#list]
-                                [/@cms_content_list]
-                            </ul>
-                        </div>
+                    <div style=" margin-top:20px; margin-right:6px; border-top: 1px solid #cfcfcf; line-height: 25px;">
+					<p class="paragraphIndent">80年代初期，中国地质大学（武汉）就开始了地图学及计算机地图制图的研究工作，并设置了地图制图学专业，地理信息系统专业是在地图制图学专业基础上发展起来的。上世纪90年代，为适应学科发展的需要，学校进行部分专业的重新调整与规划，1998年设立地理信息系统专业（工科），并开始招收培养国家急需的地理信息系统专业的本科人才，每年招收3个班，2012年教育部将普通高等学校本科专业目录中“地理信息系统”专业改名为“地理信息科学”专业（理科），目前该专业由空间信息工程系负责建设。</p>
+                        
                     </div>
                     <!-- 新闻头条310_end -->
                     <div class="clear"></div>
 
-
-<!-- 研究生和本科生动态部分 -->
-  
-         <div class="development">
-
-  	 <!-- 本科生动态_begin -->
-                    <div class="w308 rim02 mt10" style="margin-left:20px; width:450px;">
-                        <div class="LanMu02b">
-                            <div class="LanMu02a">本科生动态</div>
-                            <a href="${base}/bksdt/index.jhtml" class="more" style="margin-top:5px;">more>></a>
-                        </div>
-                        <div class="paihangbang">
-                            <ul>
-                                [@cms_content_list count='11' titLen='28' orderBy='7' channelOption='1' channelId='78']
-                                [#list tag_list as a]
-                                <li>
-                                <div class="v-rank1-order1 v-rank1-top1">${a_index+1}</div>
-                                <a href="${a.url}" title="${a.title}" target="_blank">
-                                [@text_cut s=a.title len=titLen /]
-                                </a>
-                                </li>
-                                [/#list]
-                                [/@cms_content_list]
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 本科生动态310_end -->
-                   
-
-  	
-  	<!-- 研究生动态_begin -->
-                    <div class="w308 rim02 mt10" style="margin-right:6px; float:right;  width:450px;">
-                        <div class="LanMu02b">
-                            <div class="LanMu02a">研究生动态</div>
-                            <a href="${base}/yjsdt/index.jhtml" class="more" style="margin-top:5px;">more>></a>
-                        </div>
-                        <div class="paihangbang">
-                            <ul>
-                                [@cms_content_list count='11' titLen='28' orderBy='7' channelOption='1' channelId='78']
-                                [#list tag_list as a]
-                                <li>
-                                <div class="v-rank1-order1 v-rank1-top1">${a_index+1}</div>
-                                <a href="${a.url}" title="${a.title}" target="_blank">
-                                [@text_cut s=a.title len=titLen /]
-                                </a>
-                                </li>
-                                [/#list]
-                                [/@cms_content_list]
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 研究生动态310_end -->
-  	</div>
-
 <!--图库展示区-->
 
-<div style="height:300px; border:1px solid #C0C0C0; margin-top:20px;" >
+	<div style="height:300px; border:1px solid #C0C0C0; margin-top: 60px;" >
        <!-- 图库_begin -->
                 <div class="AreaTitle"> 图库</div>
                 <div class="AreaContent1">
@@ -202,7 +144,7 @@ $(function() {
                     </ul>
                 </div>
               <!-- 图库_end -->
-</div>
+	</div>
 
 
 
